@@ -3,10 +3,20 @@
 <head>
 <meta name="viewport" content="width=device-width, initial-scale=1">
   <title>How will it end?</title>
-<link rel="icon" 
-      type="image/png" 
-      href="favicon.png" />
+
+  
+   <link id="icon-a" rel="shortcut icon" type="image/png" href="favicon-1.png" />
+    <link id="icon-b" rel="shortcut icon" type="image/png" href="favicon-2.png" />
+     <link id="icon-c" rel="shortcut icon" type="image/png" href="favicon-3.png" />
+     <link id="icon-d" rel="shortcut icon" type="image/png" href="favicon-4.png" />
+     <link id="icon-e" rel="shortcut icon" type="image/png" href="favicon-5.png" />
+     <link id="icon-f" rel="shortcut icon" type="image/png" href="favicon-6.png" />
+  
+  
 <style>
+  
+ 
+  
 p {
   display: inline;
   font-size: 8vw;
@@ -99,6 +109,25 @@ body {
         document.getElementById("end").innerHTML = "GO TO THE PUB";
     }
     }, 1000);
+    </script>    <script>
+        // Store your current icon
+        var current = 0;
+        var icons = ['favicon-1.png', 'favicon-2.png', 'favicon-3.png','favicon-4.png','favicon-5.png','favicon-6.png', ];
+        // Every 2 seconds, switch your icon
+        setInterval(function () {
+            // Determine the next icon
+            var icon = (++current % icons.length);
+            // Grab the URL to use
+            var url = icons[icon];
+            // Update your elements
+            document.getElementById('icon-a').href = url;
+            document.getElementById('icon-b').href = url;
+          document.getElementById('icon-c').href = url;
+          document.getElementById('icon-d').href = url;
+          document.getElementById('icon-e').href = url;
+          document.getElementById('icon-f').href = url;
+        }, 1200);
     </script>
+</body>
 </body>
 </html>
