@@ -93,7 +93,14 @@ body {
 
 
 <body>
+<div class="song">
+	<div class="title">Kawausoya - Sarazanmai</div>
+	<div class="pause" onclick="togglePlay()">Enya Mode Off</div>
+	<div class="player">
+		<audio class="audio" src="onlytime.mp3" autoplay type="audio" loop=""></audio>
+	</div>
 
+</div>
   
   <div class="container"><div class="element">
     <div class="jun21">
@@ -153,7 +160,22 @@ body {
           document.getElementById('icon-f').href = url;
         }, 500);
     </script>
+	
+	<script>
   
+var pause = document.querySelector(".pause");
+var audio = document.querySelector(".audio");
+
+function togglePlay() {
+	if (audio.paused) {
+		audio.play();
+		pause.innerHTML = "Enya Mode Off";
+	} else {
+		audio.pause();
+		pause.innerHTML = "Enya Mode On";
+		pause.style.color = "";
+	}
+}</script>
 
 </body>
 </html>
