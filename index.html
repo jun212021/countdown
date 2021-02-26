@@ -23,10 +23,39 @@
      <link id="icon-f" rel="shortcut icon" type="image/png" href="favicon-6.png" />
   
   
-<style>   .song{ font-family: 'Space Mono';
+<style>   
+	.info { font-family: 'Space Mono';
+    text-align: left;
+    margin: 2%;
+	color: white;position:fixed;left:0; }
+	
+	
+	.song{ font-family: 'Space Mono';
     text-align: right;
     margin: 2%;
 	color: white;position:fixed;right:0; }
+	
+	/* unvisited link */
+a:link {
+  color: white;
+	text-decoration:underline;
+}
+
+/* visited link */
+a:visited {
+  color: white;
+}
+
+/* mouse over link */
+a:hover {
+  color: white;
+	opacity: 0.3;
+}
+
+/* selected link */
+a:active {
+  color: white;
+}
 	
 	
   .pause {
@@ -93,6 +122,9 @@ body {
 
 
 <body>
+	
+	<div class="info">Countdown to <a target="blank" href="https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions">June 21st, 2021</a>
+</div>
 <div class="song">
 	
 	<div class="pause" onclick="togglePlay()">Enya Mode Off 🔇</div>
