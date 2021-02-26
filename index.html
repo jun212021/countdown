@@ -151,8 +151,8 @@ body {
 	<div class="info">Countdown to <a target="blank" href="https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions">21.06.21</a>
 </div>
 <div class="song">
-	
-	<div class="pause" onclick="togglePlay()">Daft Punk Off 🔇</div>
+	<button onclick="changeStyle()"> 
+		<div class="pause" onclick="togglePlay()">Daft Punk Off 🔇</div></button>
 	<div class="player">
 		<audio class="audio" src="toolong.mp3" autoplay type="audio" loop=""></audio>
 	</div>
@@ -160,11 +160,11 @@ body {
 </div>
   
   <div class="container"><div class="element">
-    <div class="jun21">
+    <div class="jun21"><span class="red" id="span">
     <p id="days"></p>
     <p id="hours"></p>
     <p id="mins"></p>
-	    <p id="secs"></p>
+	    <p id="secs"></p></span>
     <h2 id="end"></h2></div></div></div>
     <script>
     // The data/time we want to countdown to
@@ -233,6 +233,19 @@ function togglePlay() {
 		pause.style.color = "";
 	}
 }</script>
-
+<script> 
+var span = document.getElementById('span');
+function changeStyle() {
+  for(var i = 0; i < span.classList.length; i++) {
+    if(span.classList[i].indexOf('red') >= 0) {
+      span.classList.remove('red');
+      span.classList.add('blue');
+    } else { 
+      span.classList.remove('blue');
+      span.classList.add('red'); 
+    }
+  }
+}
+</script>
 </body>
 </html>
