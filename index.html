@@ -134,24 +134,7 @@ body {
 }
   
 </style>
-	<script language="javascript" type="text/javascript">
-function clock() {
-var date = new Date()
-var year = date.getYear()
-var month = date.getMonth()
-var day = date.getDate()
-var hour = date.getHours()
-var minute = date.getMinutes()
-var second = date.getSeconds()
-var months = new Array("", "JAN", "FEB", "MAR", "APR", "MAY", "JUN", "JUL", "AUG", "SEP", "OCT", "NOV", "DEC")
-var monthname = months[month]
-if (hour > 12) {hour = hour - 12}
-if (minute < 10) {minute = "0" + minute}
-if (second < 10) {second = "0" + second}
-document.title = monthname + " " + day + ", " + year + " - " + hour + ":" + minute + ":" + second
-setTimeout(clock, 1000)
-}
-</script>
+
 	
 </head>
 <link rel="preconnect" href="https://fonts.gstatic.com">
@@ -159,7 +142,7 @@ setTimeout(clock, 1000)
 
 
 
-<body onLoad="clock()">
+<body>
 	
 	<div class="info">Countdown to <a target="blank" href="https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions">21.06.21</a>
 </div>
