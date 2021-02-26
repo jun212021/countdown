@@ -26,7 +26,7 @@
 <style>   .song{ font-family: 'Space Mono';
     text-align: right;
     margin: 2%;
-	color: white; }
+	color: white;position:fixed;right:0; }
 	
 	
   .pause {
@@ -94,8 +94,8 @@ body {
 
 <body>
 <div class="song">
-	<div class="title">Kawausoya - Sarazanmai</div>
-	<div class="pause" onclick="togglePlay()">Enya Mode Off</div>
+	
+	<div class="pause" onclick="togglePlay()">Enya Mode Off 🔇</div>
 	<div class="player">
 		<audio class="audio" src="onlytime.mp3" autoplay type="audio" loop=""></audio>
 	</div>
@@ -169,10 +169,10 @@ var audio = document.querySelector(".audio");
 function togglePlay() {
 	if (audio.paused) {
 		audio.play();
-		pause.innerHTML = "Enya Mode Off";
+		pause.innerHTML = "Enya Mode On 🔊";
 	} else {
 		audio.pause();
-		pause.innerHTML = "Enya Mode On";
+		pause.innerHTML = "Enya Mode Off 🔇";
 		pause.style.color = "";
 	}
 }</script>
