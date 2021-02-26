@@ -3,6 +3,20 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4QCWCC9QB"></script>
+	<script> 
+var span = document.getElementById('span');
+function changeStyle() {
+  for(var i = 0; i < span.classList.length; i++) {
+    if(span.classList[i].indexOf('red') >= 0) {
+      span.classList.remove('red');
+      span.classList.add('blue');
+    } else { 
+      span.classList.remove('blue');
+      span.classList.add('red'); 
+    }
+  }
+}
+</script>
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -233,19 +247,6 @@ function togglePlay() {
 		pause.style.color = "";
 	}
 }</script>
-<script> 
-var span = document.getElementById('span');
-function changeStyle() {
-  for(var i = 0; i < span.classList.length; i++) {
-    if(span.classList[i].indexOf('red') >= 0) {
-      span.classList.remove('red');
-      span.classList.add('blue');
-    } else { 
-      span.classList.remove('blue');
-      span.classList.add('red'); 
-    }
-  }
-}
-</script>
+
 </body>
 </html>
