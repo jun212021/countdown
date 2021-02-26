@@ -3,20 +3,7 @@
 <head>
   <!-- Global site tag (gtag.js) - Google Analytics -->
 <script async src="https://www.googletagmanager.com/gtag/js?id=G-H4QCWCC9QB"></script>
-	<script> 
-var span = document.getElementById('span');
-function changeStyle() {
-  for(var i = 0; i < span.classList.length; i++) {
-    if(span.classList[i].indexOf('red') >= 0) {
-      span.classList.remove('red');
-      span.classList.add('blue');
-    } else { 
-      span.classList.remove('blue');
-      span.classList.add('red'); 
-    }
-  }
-}
-</script>
+
 <script>
   window.dataLayer = window.dataLayer || [];
   function gtag(){dataLayer.push(arguments);}
@@ -126,7 +113,7 @@ font-family: 'Space Mono', monospace;
   vertical-align: middle;
 }
 
-.red { color:red; } .blue { color:blue; }
+
 	
 body {
     background-color:black;
@@ -166,8 +153,8 @@ body {
 	<div class="info">Countdown to <a target="blank" href="https://www.gov.uk/government/news/prime-minister-sets-out-roadmap-to-cautiously-ease-lockdown-restrictions">21.06.21</a>
 </div>
 <div class="song">
-	<button onclick="changeStyle()"> 
-		<div class="pause" onclick="togglePlay()">Daft Punk Off 🔇</div></button>
+	
+		<div class="pause" onclick="togglePlay()">Daft Punk Off 🔇</div>
 	<div class="player">
 		<audio class="audio" src="toolong.mp3" autoplay type="audio" loop=""></audio>
 	</div>
