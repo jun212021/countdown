@@ -23,7 +23,11 @@
      <link id="icon-f" rel="shortcut icon" type="image/png" href="favicon-6.png" />
   
   
-<style>   
+<style>   .rainbow-text {
+  background-image: linear-gradient(to left, violet, indigo, blue, green, yellow, orange, red);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
 	.info { font-family: 'Space Mono';
     text-align: left;
     margin: 2%;
@@ -156,11 +160,11 @@ body {
 </div>
   
   <div class="container"><div class="element">
-    <div class="jun21">
+    <div class="jun21"><span class="rainbow-text">
     <p id="days"></p>
     <p id="hours"></p>
     <p id="mins"></p>
-    <p id="secs"></p>
+	    <p id="secs"></p></span>
     <h2 id="end"></h2></div></div></div>
     <script>
     // The data/time we want to countdown to
